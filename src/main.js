@@ -1,8 +1,13 @@
 angular.module('eo', [
+  'ngLocale',
   // libraries
   'ui.router',
   'ui.bootstrap',
   'ct.ui.router.extras',
+  // core
+  'eo.core',
+  // ui
+  'eo.ui',
   // views
   'eo.view.top',
   'eo.view.front',
@@ -24,6 +29,12 @@ angular.module('eo', [
       if(path[path.length - 1] !== '/') { return; }
       return path.slice(0, -1);
     });
-}]);
+}])
+
+.run(['$locale', function($locale) {
+  console.log($locale);
+}])
+
+;
 
 angular.bootstrap(document, ['eo']);

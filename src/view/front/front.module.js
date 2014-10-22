@@ -8,9 +8,17 @@ angular.module('eo.view.front', [])
     $stateProvider.state('top.front', {
       url: '/',
       templateUrl: 'src/view/front/front.html',
-      controller: ['$scope', 'timerService', function($scope, timerService) {
+      controller: ['$scope', 'timerService', 'core.i18n.translationCache', function($scope, timerService, translationCache) {
         timerService.instrument($scope);
-      }]
+        console.log(translationCache.info());
+      }],
+      resolve: {
+        test: ['core.i18n.translationCache', function(translationCache) {
+          console.log(translationCache.info());
+          window.cache = translationCache;
+          return translationCache.info();
+        }]
+      }
     });
 
 }]);
