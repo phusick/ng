@@ -7,7 +7,8 @@ angular.module('eo', [
   'eo.view.top',
   'eo.view.front',
   'eo.view.auth',
-  'eo.view.premium'
+  'eo.view.premium',
+  'eo.view.workout'
 ])
 
 .config([
