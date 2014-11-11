@@ -18,4 +18,8 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch(paths.scripts, ['scripts']);
+});
+
 gulp.task('default', ['scripts']);
