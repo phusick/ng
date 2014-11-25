@@ -3,6 +3,8 @@ angular.module('eo', [
   'ui.router',
   'ui.bootstrap',
   'ct.ui.router.extras',
+  // src
+  'eo.model',
   // views
   'eo.view.top',
   'eo.view.front',
