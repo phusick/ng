@@ -7,6 +7,7 @@ var paths = {
   scripts: [
     'src/**/*.module.js',
     'src/**/!(main)*.js',
+    '!src/**/*.spec.js',
     'src/main.js'
   ]
 };
