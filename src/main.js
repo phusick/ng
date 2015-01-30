@@ -5,6 +5,7 @@ angular.module('eo', [
   'ct.ui.router.extras',
   // src
   'eo.model',
+  'eo.common',
   // views
   'eo.view.top',
   'eo.view.front',
