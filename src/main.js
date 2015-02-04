@@ -1,5 +1,6 @@
 angular.module('eo', [
   // libraries
+  'ngAnimate',
   'ui.router',
   'ui.bootstrap',
   'ct.ui.router.extras',
